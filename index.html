@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/animate.css" />
+  <link rel="stylesheet" href="./css/animate.css"/>
   <title>TIMBER TOURS</title>
 </head>
 <!-- **************
@@ -19,27 +21,25 @@
     <!-- **************
 	  *******LOGO***
   ************************ -->
-    <div class="logo animated bounceInLeft">
-      <img class="logo__img" src="./img/logo.png" alt="logo_sarajevo" />
-      <p class="logo__caption">DISCOVER MORE</p>
+    <div class="logo bounceInLeft">
+      <img class="logo__img" src="./img/logo.webp" alt="timber tours" />
+      <h3 class="logo__caption">DISCOVER MORE</h3>
     </div>
     <!-- **************
 	  *******MENU***
   ************************ -->
-    <div class="menu animated bounceInRight" id="main-menu">
-      <button class="menu-toggle" id="toggle-menu"></button>
-      <div class="menu-dropdown">
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Offer</a></li>
-            <li><a href="">Locations</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-      </div>
-      </nav>
+  <div class="dropdown bounceInLeft">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      MENU
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#home">Home</a>
+      <a class="dropdown-item" href="#offer">Offer</a>
+      <a class="dropdown-item" href="#locations">Locations</a>
+      <a class="dropdown-item" href="#team">Team</a>
+      <a class="dropdown-item" href="#contact">Contact</a>
     </div>
+  </div>
 </header>
 
 <body>
@@ -47,29 +47,22 @@
     *******HERO***
 ************************ -->
   <div class="hero__outer">
-    
-    <div class="hero container">
-      <!-- Full-width images with number and caption text -->
 
-      <div class="hero__slider">
-        <div class="hero__slide animated bounceInUp">
-          <div class="hero__caption fade text">
-            <h2 class="hero__caption__title">timber tours<span>.</span></h2>
-            <h3 class="hero__caption__subtitle"><span>/discover</span> more.</h3>
-            <p class="hero__caption__text">
-              We'll teach you how to master <span>/mountains and forests</span>
-            </p>
-          </div>
-          <div class="social__outer">
-            <div class="social__container">
-              <!-- Social buttons -->
-              <div id="social" style="text-align:center">
-                <a class="facebookBtn1 smGlobalBtn" href="#"></a>
-                <a class="twitterBtn1 smGlobalBtn" href="#"></a>
-                <a class="googleplusBtn1 smGlobalBtn" href="#"></a>
-                <a class="rssBtn1 smGlobalBtn" href="#"></a>
-              </div>
-            </div>
+    <div class="hero container">
+      <div class="hero__slide bounceInUp" id="home">
+        <div class="hero__caption text">
+          <h1 class="hero__caption__title">timber tours<span>.</span></h1>
+          <h2 class="hero__caption__subtitle"><span>/discover</span> more.</h2>
+          <p class="hero__caption__text">
+            We'll teach you how to master <span>/mountains and forests</span>
+          </p>
+        </div>
+        <div class="social__outer">
+          <div id="social" style="text-align:center">
+            <a class="facebookBtn1 smGlobalBtn" href="https://github.com/OFenstyk/"></a>
+            <a class="twitterBtn1 smGlobalBtn" href="https://github.com/OFenstyk/"></a>
+            <a class="googleplusBtn1 smGlobalBtn" href="https://github.com/OFenstyk/"></a>
+            <a class="rssBtn1 smGlobalBtn" href="https://github.com/OFenstyk/"></a>
           </div>
         </div>
       </div>
@@ -78,40 +71,37 @@
   <!-- **************
     *******OFFER***
 ************************ -->
-  <div class="offer__outer container">
-    <div class="offer ">
-      <h3 class="animated  mov_1">WE OFFER</h3>
+  <div class="offer__outer container lazyload">
+    <div class="offer" id="offer">
+      <h3>WE OFFER</h3>
 
       <div class="offer__inner">
         <div class="list">
 
-          <div class="list__item list-1 mov_2">
-            <img src="./img/feather.png" alt="" />
+          <div class="list__item list-1">
+            <img src="./img/mountain.webp" alt="hiking" class="lazyload"/>
             <h4>Hiking</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus. Eligendi cumque
-              asperiores nobis a exercitationem. Ipsa delectus quam culpa suscipit? Similique et necessitatibus
-              architecto minima reiciendis ducimus. Maiores, nesciunt?
+              We'll show all the most beautiful places in European Alps and teach you how to pick hiking routes, survive
+              in an ememrgency case, and interact with wildlife.
             </p>
           </div>
 
-          <div class="list__item list-2 mov_3">
-            <img src="./img/pencil.png" alt="" />
+          <div class="list__item list-2 ">
+            <img src="./img/tent.webp" alt="camping" class="lazyload"/>
             <h4>Camping</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus. Eligendi cumque
-              asperiores nobis a exercitationem. Ipsa delectus quam culpa suscipit? Similique et necessitatibus
-              architecto minima reiciendis ducimus. Maiores, nesciunt?
+              How to live in the wild comfortably and in harmony with the forest? We'll get you throught that along with
+              useful tips on how to build your tent or even a house.
             </p>
           </div>
 
-          <div class="list__item list-3 mov_4">
-            <img src="./img/megaphone.png" alt="" />
+          <div class="list__item list-3 ">
+            <img src="./img/megaphone.webp" alt="tours" class="lazyload"/>
             <h4>Tours</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, temporibus. Eligendi cumque
-              asperiores nobis a exercitationem. Ipsa delectus quam culpa suscipit? Similique et necessitatibus
-              architecto minima reiciendis ducimus. Maiores, nesciunt?
+              Unique tours through marvelous woods in high mountains will become bright and unforgettable memories of
+              your life.
             </p>
           </div>
         </div>
@@ -121,7 +111,7 @@
   <!-- **************
     *******LEARN***
 ************************ -->
-  <div class="learn__outer ">
+  <div class="learn__outer lazyload">
     <div class="learn container">
       <h3><span> /WHAT ELSE</span> will you learn</h3>
 
@@ -129,51 +119,53 @@
 
       <div class="learn__list">
 
-        <div class="learn__list__item list-1 mov_2">
-          <img src="./img/tools.png" alt="" />
-          <h3>Equipment maintenance</h3>
+        <div class="learn__list__item list-1 ">
+          <img src="./img/toolbox.webp" alt="equipment" class="lazyload"/>
+          <h4>Equipment maintenance</h4>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Keeping your equipment in good condition is essential for your good experience.
           </p>
         </div>
 
 
-        <div class="learn__list__item list-2 mov_3">
-          <img src="./img/clock.png" alt="" />
-          <h3>Speed hiking</h3>
+        <div class="learn__list__item list-2 ">
+          <img src="./img/clock.webp" alt="speed" class="lazyload"/>
+          <h4>Speed hiking</h4>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Want to speed up without losing safety? We'll have you covered.
           </p>
         </div>
 
 
-        <div class="learn__list__item list-3 mov_4">
-          <img src="./img/music.png" alt="" />
-          <h3>Entetainment in the woods</h3>
+        <div class="learn__list__item list-3 ">
+          <img src="./img/notes.webp" alt="fun" class="lazyload"/>
+          <h4>Entetainment in the woods</h4>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. </p>
-        </div>
-
-        <div class="learn__list__item list-4 mov_2">
-          <img src="./img/person.png" alt="" />
-          <h3>Survival skills</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. </p>
-        </div>
-
-        <div class="learn__list__item list-5 mov_3">
-          <img src="./img/send.png" alt="" />
-          <h3>Skill tests</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            We'll show you how to never get bored in the woods.
           </p>
         </div>
 
-        <div class="learn__list__item list-6 mov_4">
-          <img src="./img/camera.png" alt="" />
-          <h3>Photo session</h3>
+        <div class="learn__list__item list-4 ">
+          <img src="./img/climber.webp" alt="survival" class="lazyload" />
+          <h4>Survival skills</h4>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            How to always find water and food or make a fire in the woods and mountains? - Let us show you!
+          </p>
+        </div>
+
+        <div class="learn__list__item list-5 ">
+          <img src="./img/test.webp" alt="test" class="lazyload"/>
+          <h4>Skill tests</h4>
+          <p>
+            Your newly gained skills will be constantly checked in order to solidify your knowledge.
+          </p>
+        </div>
+
+        <div class="learn__list__item list-6 ">
+          <img src="./img/camera.webp" alt="photoshoot" class="lazyload"/>
+          <h4>Photo session</h4>
+          <p>
+            Yep, you'll get cool photos to keep your memories for the future.
           </p>
         </div>
       </div>
@@ -183,71 +175,63 @@
   </div>
 
   <!-- **************
-    *******GALLERY***
+    *******LOCATIONS***
 ************************ -->
-  <div class="work__outer">
-    <div class="works container mov">
+  <div class="locations__outer lazyload">
+    <div class="locations container" id="locations">
       <h3>LOCATIONS</h3>
-      <div class="swiper-container gallery-top">
+      <div class="swiper-container gallery-top lazyload">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(./img/1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/3.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/4.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/5.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/6.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/7.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/8.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/9.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/10.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/11.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/12.jpg)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/1.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/2.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/3.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/4.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/5.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/6.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/7.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/8.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/9.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/10.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/11.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/12.webp)"></div>
         </div>
-        <!-- Add Arrows -->
         <div class="swiper-button-next swiper-button-white"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
       </div>
-      <div class="swiper-container gallery-thumbs">
+      <div class="swiper-container gallery-thumbs lazyload">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(./img/1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/3.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/4.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/5.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/6.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/7.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/8.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/9.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/10.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/11.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(./img/12.jpg)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/1.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/2.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/3.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/4.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/5.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/6.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/7.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/8.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/9.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/10.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/11.webp)"></div>
+          <div   class="swiper-slide lazyload" style="background-image:url(./img/12.webp)"></div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <!--
     *******TEAM***
 ************************ -->
-  <div class="team__outer">
-    <div class="team container mov">
+  <div class="team__outer lazyload">
+    <div class="team container" id="team">
       <h3>OUR TEAM</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore</p>
+      <p>These guys are making it all possible</p>
 
 
       <div class="employees">
         <div class="employees__item employee-1">
-          <section class="mask one">
+          <section  class="mask one">
             <div class="details">
-              <p>Nemo enim ipsam <br>
-                voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-              <div id="social" style="text-align:center">
-                <a class="facebookBtn smGlobalBtn" href="#"></a>
-                <a class="twitterBtn smGlobalBtn" href="#"></a>
-                <a class="googleplusBtn smGlobalBtn" href="#"></a>
-              </div>
+              <p>Johny, Johnny, Jimbo <br>
+                is our managing director. Serious but still very nice and open guy</p>
             </div>
           </section>
           <h3>John Filmr Doe</h3>
@@ -256,14 +240,8 @@
         <div class="employees__item employee-2">
           <section class="mask two">
             <div class="details">
-              <p>Nemo enim ipsam <br>
-                voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-              <div id="social" style="text-align:center">
-                <a class="facebookBtn smGlobalBtn" href="#"></a>
-                <a class="twitterBtn smGlobalBtn" href="#"></a>
-                <a class="googleplusBtn smGlobalBtn" href="#"></a>
-              </div>
+              <p>Chystine, Chris, Crystal<br>
+                she's responsible for your and our health</p>
             </div>
           </section>
           <h3>Chystine Hineu</h3>
@@ -272,14 +250,8 @@
         <div class="employees__item employee-3">
           <section class="mask three">
             <div class="details">
-              <p>Nemo enim ipsam <br>
-                voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-              <div id="social" style="text-align:center">
-                <a class="facebookBtn smGlobalBtn" href="#"></a>
-                <a class="twitterBtn smGlobalBtn" href="#"></a>
-                <a class="googleplusBtn smGlobalBtn" href="#"></a>
-              </div>
+              <p>Martina, Marty, Morty<br>
+                she is taking you in the mountains, and what is more important - back.</p>
             </div>
           </section>
           <h3>Martina Matrone</h3>
@@ -289,14 +261,8 @@
         <div class="employees__item employee-4">
           <section class="mask four">
             <div class="details">
-              <p>Nemo enim ipsam <br>
-                voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-              <div id="social" style="text-align:center">
-                <a class="facebookBtn smGlobalBtn" href="#"></a>
-                <a class="twitterBtn smGlobalBtn" href="#"></a>
-                <a class="googleplusBtn smGlobalBtn" href="#"></a>
-              </div>
+              <p>Steve, Steven, Stephan <br>
+                will make sure you're taking only necessary equipment and that you'll make it out from the wild</p>
             </div>
           </section>
           <h3>Steve Flaulkin</h3>
@@ -309,43 +275,43 @@
   <!-- **************
     *******FACTS***
 ************************ -->
-  <div class="facts__outer">
-    <div class="facts container mov">
+  <div class="facts__outer lazyload">
+    <div class="facts container ">
       <h3>FACTS</h3>
-      
+
       <div class="facts__inner">
-        <div class="facts__list">
-
-          <div class="facts__list__item list-1">
-            <img src="./img/hours.png" alt="" />
-            <h4>500</h4>
-            <p>
-              TOUR MILES
-            </p>
-          </div>
-
-          <div class="facts__list__item list-2">
-            <img src="./img/people.png" alt="" />
-            <h4>120</h4>
-            <p>
-              SATISFIED STUDENTS
-            </p>
-          </div>
-
-          <div class="facts__list__item list-3">
-            <img src="./img/rocket.png" alt="" />
-            <h4>36</h4>
-            <p>
-              LOCATIONS
-            </p>
-          </div>
-
-          <div class="facts__list__item list-">
-            <img src="./img/cup.png" alt="" />
-            <h4>42</h4>
-            <p>
-              AWARDS WON
-            </p>
+        <div class="middle">
+          <div class="counting-sec">
+            <div class="inner-width">
+              <div class="col">
+                <i class="fas fa-flag-checkered"></i>
+                <div class="num">530</div>
+                <p>
+                  TOUR MILES
+                </p>
+              </div>
+              <div class="col">
+                <i class="fas fa-users"></i>
+                <div class="num">4252</div>
+                <p>
+                  SATISFIED CLIENTS
+                </p>
+              </div>
+              <div class="col">
+                <i class="fas fa-compass"></i>
+                <div class="num">36</div>
+                <p>
+                  LOCATIONS
+                </p>
+              </div>
+              <div class="col">
+                <i class="fas fa-trophy"></i>
+                <div class="num">82</div>
+                <p>
+                  AWARDS WON
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -354,92 +320,73 @@
   <!-- **************
   *******CONTACT***
 ************************ -->
-  <div class="clients__outer">
-    <div class="clients container mov">
-      <h3>CONACT US</h3>
-      
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+  <div class="clients__outer lazyload">
+    <div class="clients container" id="contact">
+      <h4>CONACT US</h4>
+
+      <p>We'll be happy to receive a letter from you!</p>
       <div class="contact-client">
         <div class="client">
-          <h4>Cras at ultrices erat, sed <br> vulputate!</h4>
+          <h5>Find our office here</h5>
           <p>Zahnradbahnweg 19<br>
-            2734 Puchberg am<br> Schneeberg. 
+            2734 Puchberg am<br> Schneeberg.
             Lower Austria.<br> Austria. <br>
-            (676) 1234 567 <br>
-            hello@brandi.com <br>
-            ww.brandi.com</p>
+            (676) 921 3434 <br>
+            easy.frontend.dev@gmail.com <br>
+          </p>
         </div>
 
         <div class="client-form">
-          <h4>Say hello!</h4>
+          <h5>Say hello!</h5>
           <div class="text-email">
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
           </div>
           <textarea name="Your Name" id="" cols="30" rows="1" placeholder="Your Name"></textarea>
-          <button><a href="">SEND MESSAGE</a></button>
+          <a class="btn" href="mailto:easy.frontend.dev@gmail.com">SEND MESSAGE</a>
         </div>
-        <div id="social">
-          <a class="facebookBtn smGlobalBtn" href="#"></a>
-          <a class="twitterBtn smGlobalBtn" href="#"></a>
-          <a class="googleplusBtn smGlobalBtn" href="#"></a>
-          <a class="linkedinBtn smGlobalBtn" href="#"></a>
-          <a class="pinterestBtn smGlobalBtn" href="#"></a>
-        </div>
+
       </div>
     </div>
 
   </div>
-  <div id="map">
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1329.6816197116661!2d16.35910865821135!3d48.199618994807096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDExJzU4LjYiTiAxNsKwMjEnMzYuNyJF!5e0!3m2!1sen!2sat!4v1586170745412!5m2!1sen!2sat" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>    -->
-  </div>
+
   <!-- **************
   *******FOOTER***
 ************************ -->
   <footer class="footer__outer">
-    <div class="footer container mov">
+    <div class="footer container">
       <div class="row">
         <div class="desc">
           <div class="footer-logo">
-            <img class="footer-logo__img" src="./img/logo.png" alt="logo_tajam" />
-
+            <img class="footer-logo__img lazyload" src="./img/logo.webp" alt="logo timber tours" />
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis illum laboriosam tenetur repellat ex
-            provident, consequatur id voluptas enim commodi inventore, ullam perspiciatis rerum. Dolores facilis
-            consectetur velit nisi tenetur.</p>
+          <p>Explore yourself and the world around you with Timber tours</p>
         </div>
         <div class="footer-form">
           <h4>Subscribe</h4>
-          <p>
-            <div class="input-group">
-              <form action="https://feedburner.google.com/fb/a/mailverify" method="post" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=techkshetra', 'popupwindow',  'scrollbars=yes,width=550,height=520');return true" target="popupwindow">
-                <input class="inptfld" name="email" placeholder=" Your Email" type="text">
-                <input name="uri" value="techkshetra" type="hidden">
-                <input name="loc" value="en_US" type="hidden">
-                <input class="subscribebtn btn" value="Subscribe Now!" type="submit">
-                  </form>
+          <div class="input-group">
+            <form action="https://feedburner.google.com/fb/a/mailverify" method="post"
+              onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=techkshetra', 'popupwindow',  'scrollbars=yes,width=550,height=520');return true"
+              target="popupwindow">
+              <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+              <input name="uri" value="techkshetra" type="hidden">
+              <input name="loc" value="en_US" type="hidden">
+              <input class="subscribebtn btn" value="Subscribe Now!" type="submit">
+            </form>
 
-              <div class="col-md-2 footer-social">
-                <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div>
+              <p>we'll send you only interesting stuff</p>
 
-              </div>
-            </div><!-- /input-group -->
-          </p>
+            </div>
+          </div>
         </div>
         <div class="footer-nav">
-          <h4>Explore</h4>
+          <h4>BY ©<a href="https://github.com/OFenstyk">EASY</a></h4>
           <div class="footer-list">
             <ul class="list-1">
-              <li><a href=""></a>Envato</li>
-              <li><a href=""></a>Themecurve</li>
-              <li><a href=""></a>Kreativeshowcase</li>
-              <li><a href=""></a>Freebiescurve</li>
-            </ul>
-            <ul class="list-2">
-              <li><a href=""></a>Themeforest</li>
-              <li><a href=""></a>Microsoft</li>
-              <li><a href=""></a>Google</li>
-              <li><a href=""></a>Yahoo</li>
+              <li><a href="https://github.com/OFenstyk">GITHUB</a></li>
+              <li><a href="mailto:easy.frontend.dev@gmail.com">EMAIL</a></li>
             </ul>
           </div>
         </div>
@@ -448,80 +395,18 @@
   </footer>
   <script src="./js/libs.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="./js/common.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="lazysizes.min.js" async></script>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   <script>
-    (function () {
-      var button = document.getElementById('toggle-menu');
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-        var menu = document.getElementById('main-menu');
-        menu.classList.toggle('is-open');
-      });
-    }());
+    $(".num").counterUp({ delay: 10, time: 1000 });
   </script>
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of home
-      var home = { lat: 47.7733364, lng: 15.8954012 };
-      // The map, centered at home
-      var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 15, center: home });
-      // The marker, positioned at home
-      var marker = new google.maps.Marker({ position: home, map: map });
-    }
-  </script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFRoZgoiXTYPEapQZeQhjLSv4lBkjdRo4&callback=initMap">
-    </script>
-<script>
-  $(window).scroll(function () {
-    $('.mov').each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 600) {
-        $(this).addClass('fadeIn');
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $('.mov_1').each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 600) {
-        $(this).addClass('zoomIn');
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $('.mov_2').each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 600) {
-        $(this).addClass('slideInLeft');
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $('.mov_3').each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 600) {
-        $(this).addClass('fadeInUp');
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $('.mov_4').each(function () {
-      var imagePos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow + 600) {
-        $(this).addClass('slideInRight');
-      }
-    });
-  });
-</script>
+  
 </body>
 
 </html>
